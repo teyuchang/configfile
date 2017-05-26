@@ -13,11 +13,18 @@ set hlsearch
 set ignorecase
 set tags=tags;
 set autochdir
+set foldenable
+set foldmethod=syntax 
+set foldnestmax=3
+set foldlevel=4
+nnoremap <Space> za
 
 command Wq wq
 command WQ wq
 command W w
 command Q q
+
+autocmd FileType python,shell set commentstring=#\ %s
 
 inoremap { {<CR>}<UP><END>
 color desert
