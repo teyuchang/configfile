@@ -1,7 +1,7 @@
 set tabstop=4
 set shiftwidth=4
 
-set nu
+set rnu
 
 syntax on
 set autoindent
@@ -34,7 +34,14 @@ if has("autocmd")
 endif
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-let g:ycm_show_diagnostics_ui = 0
+let g:ycm_confirm_extra_conf=1
+" let g:ycm_show_diagnostics_ui = 0
+
+" let g:ycm_keep_logfiles = 1
+" let g:ycm_log_level = 'debug'
+
+" let g:ycm_server_keep_logfiles = 1
+" let g:ycm_server_log_level = 'debug'
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
