@@ -2,6 +2,7 @@ set tabstop=4
 set shiftwidth=4
 
 set rnu
+set nu
 
 syntax on
 set autoindent
